@@ -1,12 +1,16 @@
 {
-  "name": "playground-vscode-plugin",
-  "displayName": "playground-vscode-plugin",
+  "name": "lsby-vscode-auto-organize-import",
+  "displayName": "Auto Organize Imports (ts & js)",
   "version": "0.0.0",
-  "description": "",
+  "description": "对于 ts 和 js，每当保存文件时，自动整理 import 语句。",
   "categories": [
     "Other"
   ],
-  "publisher": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lsby/vscode-auto-organize-import"
+  },
+  "publisher": "hbybyyang",
   "main": "./dist/extension.js",
   "scripts": {
     "check:all": "npm run check:format && npm run check:lint && npm run check:type",
@@ -31,15 +35,13 @@
     "check-types": "tsc --noEmit",
     "lint": "eslint src --ext ts"
   },
-  "contributes": {
-    "commands": [
-      {
-        "command": "playground-vscode-plugin.helloWorld",
-        "title": "playground-vscode-plugin: Hello World"
-      }
-    ]
-  },
-  "activationEvents": [],
+  "contributes": {},
+  "activationEvents": [
+    "onLanguage:typescript",
+    "onLanguage:typescriptreact",
+    "onLanguage:javascript",
+    "onLanguage:javascriptreact"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
