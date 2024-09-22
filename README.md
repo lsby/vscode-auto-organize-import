@@ -3,7 +3,7 @@
 ## 链接
 
 - [github仓库](https://github.com/lsby/vscode-auto-organize-import)
-- [vscode商店](https://marketplace.visualstudio.com/items?itemName=lsby-vscode-auto-organize-import)
+- [vscode商店](https://marketplace.visualstudio.com/items?itemName=hbybyyang.lsby-vscode-auto-organize-import)
 
 ## 概述
 
