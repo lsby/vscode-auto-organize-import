@@ -1,7 +1,7 @@
 {
   "name": "lsby-vscode-auto-organize-import",
   "displayName": "Auto Organize Imports (ts & js)",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "对于 ts 和 js，每当保存文件时，自动整理 import 语句。",
   "categories": [
     "Other"
