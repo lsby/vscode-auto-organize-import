@@ -23,8 +23,8 @@ export function activate(_context: vscode.ExtensionContext): void {
       setTimeout(async () => {
         锁 = true
         await vscode.commands.executeCommand('editor.action.organizeImports')
-        锁 = false
         await vscode.commands.executeCommand('workbench.action.files.save')
+        锁 = false
       }, 延时时间)
     }
   })
