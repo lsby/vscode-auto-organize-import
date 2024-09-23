@@ -16,7 +16,8 @@ export function activate(_context: vscode.ExtensionContext): void {
       (activeEditor.document.languageId === 'typescript' ||
         activeEditor.document.languageId === 'typescriptreact' ||
         activeEditor.document.languageId === 'javascript' ||
-        activeEditor.document.languageId === 'javascriptreact')
+        activeEditor.document.languageId === 'javascriptreact' ||
+        activeEditor.document.languageId === 'vue')
     ) {
       var 延时时间 = 100
       setTimeout(async () => {
